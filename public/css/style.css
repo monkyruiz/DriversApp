@@ -1,6 +1,6 @@
 body {
   background: black !important;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 * {
@@ -20,7 +20,6 @@ nav {
 .logo {
   padding: 0px 1.5rem;
   color: red;
-
 }
 
 .nav-buttons ul li {
@@ -76,19 +75,19 @@ nav .fa {
   nav {
     padding: 8px 0 8px !important;
   }
-  .nav-buttons{
+
+  .nav-buttons {
     position: absolute;
-    background-color:  rgb(40 42 53);
+    background-color: rgb(40 42 53);
     border: 0px 0px 0.2px 0.2px red solid;
     border-radius: 4px;
     box-shadow: -3px 3px 7px 0px red;
     height: auto;
     width: 150px;
     top: 3rem;
-    right:-200px;
+    right: -200px;
     text-align: left;
     z-index: 2;
-
     transition: 0.6s;
   }
 
@@ -132,7 +131,8 @@ nav .fa {
   color: #fff;
   line-height: 8px;
 }
-.f-header-content a{
+
+.f-header-content a {
   align-items: center;
 }
 
@@ -146,20 +146,21 @@ nav .fa {
 .red-letter {
   color: red;
 }
-.p-header{
+
+.p-header {
   padding-bottom: 80px;
 }
 
 @media(max-width: 700px) {
-  .first-header{
-      margin: 3rem 0px;
+  .first-header {
+    margin: 3rem 0px;
   }
+
   .f-header-content {
     float: none;
     text-align: center;
     padding: 4rem 3rem;
     color: #fff;
-
   }
 
   .headerTitle {
@@ -176,15 +177,14 @@ nav .fa {
 
 @media(max-width: 1000px) {
   .p-header {
-  display: none;
+    display: none;
   }
 }
 
 /* ----login buttons---- */
 .loginButtons {
-
-margin: 3rem 0px;
-padding: 4rem;
+  margin: 3rem 0px;
+  padding: 4rem;
 }
 
 .Upbutton {
@@ -203,7 +203,6 @@ padding: 4rem;
 }
 
 .Inbutton {
-
   background-color: black;
   color: white;
   border: 1px solid black;
@@ -235,8 +234,7 @@ padding: 4rem;
   background-color: black;
 }
 
-
-.signup{
+.signup {
   margin: 6rem;
 }
 
@@ -269,49 +267,61 @@ footer {
   padding-bottom: 5px;
 }
 
-.container-fluid{
+.container-fluid {
   padding: 3% 7%;
 }
 
- /* ------sign up and options section------- */
-.signUpPage{
+/* ------sign up and options section------- */
+.signUpPage {
   position: relative;
   margin: 5rem 0rem;
   text-align: center;
-
 }
-.driver{
-  padding: 15px;
-text-align: left;
-height: 300px;
-background-color: darkgray;
-width: 25%;
-float: right;
-margin-right: 15%;
-border-radius: 15px;
+.signUpPage h1 {
+  padding-bottom: 6rem;
 }
-
-.passenger{
-  padding: 15px;
+.driver {
+  padding: 4rem 15px;
   text-align: left;
-  margin-left:15%;
-  height: 300px;
-  width: 25%;
-  background-color: darkgray;
+  height: 370px;
+  background-color: rgb(22 19 19);
+  width: 18%;
+  float: right;
+  margin-right: 28%;
+  border-radius: 15px;
+  color: white;
+  border: 1px solid red;
+}
+
+.passenger {
+  padding: 4rem 15px;
+  text-align: left;
+  margin-left: 28%;
+  height: 370px;
+  width: 18%;
+  color: white;
+  background-color: rgb(22 19 19);
   float: left;
   border-radius: 15px;
+  border: 1px solid red;
 }
-@media(max-width: 1000px) {
 
-  .passenger{
+@media(max-width: 1000px) {
+  .signUpPage h1 {
+    padding-top: 1rem;
+    padding-bottom:20px;
+    font-size: 2rem;
+  }
+  .passenger {
     width: 80%;
     margin: 5% 30px;
     height: 150px;
     text-align: left;
-    padding: 0  1rem;
+    padding: 0 1rem;
     float: none;
   }
-  .driver{
+
+  .driver {
     float: none;
     padding: 0 1rem;
     margin: 5% 30px;
@@ -320,10 +330,76 @@ border-radius: 15px;
     height: 150px;
   }
 }
+/* ------clietn register----- */
+.client-register{
+margin: 2% 30%;
+padding: 50px 100px 50px 100px;
+text-align:left;
+transition: 1s;
+border: 1px solid white;
+border-radius: 12px;
+
+}
+.client-register:hover{
+  border: 1px solid red;
+  border-radius: 12px;
+
+}
+.client-register input{
+  height: 40px;
+  width: 200px;
+  margin-bottom: 1rem;
+  display: block;
+  line-height: 2rem;
+  color: red;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid white;
+
+}
+::placeholder{
+  color: white;
+}
+.client-register h1{
+  text-align: center;
+  color: white;
+  margin:1.5rem 0px;
+
+}
+
+.client-register button{
+  margin: 1.5rem 0px;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 120px;
+  background-color: red;
+  color: white;
+  transition: 0.6;
+}
+.client-register button:hover{
+  background-color: black;
+  color: red;
+  border: 1px solid red;
+
+}
+
+@media(max-width:1000px) {
+.client-register{
+  margin: 8% 10%;
+  padding: 0;
+  padding-left: 20px;
+}
+.client-register input{
+  border: none;
+  border-bottom: 1px solid white;
+
+}
+}
+
 
 /* ------ari's style code----- */
 /*        section-heading           */
-
 .section-heading {
   color: white;
   font-size: 3rem;
@@ -331,7 +407,7 @@ border-radius: 15px;
   padding-bottom: 5px;
 }
 
-.container-fluid{
+.container-fluid {
   padding: 3% 7%;
 }
 
@@ -341,17 +417,15 @@ border-radius: 15px;
   margin-bottom: 10%;
   background: rgb(11 8 8);
 }
-/*            Our services           */
 
+/*            Our services           */
 #ourservices {
-  padding:0 10px;
+  padding: 0 10px;
   position: relative;
-  color:white;
+  color: white;
 }
 
 .service-title {
-
-
   font-size: 1.5rem;
 }
 
@@ -411,11 +485,9 @@ border-radius: 15px;
   padding: 10px;
   box-shadow: 1px 5px red;
 } */
-
 /*     recommendations        */
-
 #testimonials {
-  background-color: rgb(51,51,51);
+  background-color: rgb(51, 51, 51);
   color: red;
 }
 
@@ -430,9 +502,8 @@ border-radius: 15px;
 }
 
 /*                  contect and about             */
-
 #contact {
-  color:white;
+  color: white;
 }
 
 .colored-section {
@@ -449,21 +520,21 @@ border-radius: 15px;
   border: 3px solid transparent;
 }
 
-.about-box{
+.about-box {
   padding: 2.5%;
   border: 3px solid transparent;
 }
 
-.contact-title{
+.contact-title {
   color: red;
   text-shadow: 28px 28px 26px darkgrey;
 }
 
-.about-title{
+.about-title {
   color: red;
   text-shadow: 28px 28px 26px darkgrey;
 }
 
-#contact p{
+#contact p {
   text-shadow: 48px 48px 26px darkgrey;
 }
