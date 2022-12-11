@@ -17,7 +17,6 @@ mongoose.connect('mongodb+srv://beniaridani:Daniel112.@cluster0.qj2ixge.mongodb.
 const clientScehma = new mongoose.Schema({
   fname:String,
   lname:String,
-  userName:String,
   email:String,
   password:String
 });
@@ -28,7 +27,6 @@ app.post("/cregister", function(req, res) {
 const Newclient = new Client({
   fname: req.body.firstName,
   lname:req.body.lastName,
-  userName:req.body.userName,
   email:req.body.email,
   password:req.body.password
 });
