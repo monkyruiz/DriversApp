@@ -28,7 +28,6 @@ app.post("/cregister", function(req, res) {
 const Newclient = new Client({
   fname: req.body.firstName,
   lname:req.body.lastName,
-  userName:req.body.userName,
   email:req.body.email,
   password:req.body.password
 });
