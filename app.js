@@ -132,7 +132,7 @@ app.get("/signUp", function(req, res) {
 
 
 //set servere listner on local host
-app.listen(3000, function() {
+    app.listen(3000, (() {
   console.log("Server strted on port 3000");
 });
 >>>>>>> a757f69f56b07bde5b3005522a91f04547a86930
